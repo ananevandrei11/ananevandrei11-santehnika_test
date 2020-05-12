@@ -1,0 +1,33 @@
+.header-top {
+  height: 124px;
+  background-color:#142F4F;
+}
+
+.header-center {
+  .row {
+    min-height: 88px;
+    .col-3 {
+      min-width: 311px;
+      h4 {
+        color: #142F4F;
+      }
+    }
+    .link-tel {
+      font-size: 0.8rem;
+      a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: #000000;
+      }
+    }
+    .btn-tel {
+      .btn {
+        font-size: 0.8rem !important;
+      }
+    }
+  }
+}
+
+.header-banner {
+  max-height: 399px;
+}

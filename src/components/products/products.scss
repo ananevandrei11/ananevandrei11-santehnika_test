@@ -1,0 +1,98 @@
+.products {
+  &-item {
+    position: relative;
+    .delivery, .lider, .storage, .exclusive {
+      display: none;
+      position: absolute;
+      z-index: 1;
+    }
+    .storage {
+      background-color: #2A6218;
+    }
+    .exclusive {
+      background-color: #623C8B;
+    }
+    &:nth-of-type(1), &:nth-of-type(4) {
+      .delivery {
+        display: block;
+        top: 1rem;
+        left: 2rem;
+      }
+      .lider {
+        display: block;
+        top: 2.5rem;
+        left: 2rem;
+      }
+    }
+    &:nth-of-type(3) {
+      .delivery {
+        display: block;
+        top: 1rem;
+        left: 6.5rem;
+      }
+      .lider {
+        display: block;
+        top: 2.5rem;
+        left: 2rem;
+      }
+      .storage {
+        display: block;
+        top: 1rem;
+        left: 2rem;
+      }
+    }
+    &:nth-of-type(2) {
+      .lider {
+        display: block;
+        top: 1rem;
+        left: 6.5rem;
+      }
+      .storage {
+        display: block;
+        top: 1rem;
+        left: 2rem;
+      }
+      .exclusive {
+        display: block;
+        top: 2.5rem;
+        left: 2rem;
+      }
+    }
+  }
+  .card {
+    min-width: 15rem;
+    &-body {
+      ul {
+        .list-group {
+          &-item {
+            &:nth-of-type(2) {
+              max-height: 5rem;
+            }
+            div {
+              min-width: 10rem;
+              margin-left: -1.25rem;
+              &:nth-of-type(1) {
+                margin-left: -1.45rem;
+              }
+            }
+            .material-icons {
+              color: #C3C3C3;
+              cursor: pointer;
+            }
+            .product-reiting {
+              p:nth-of-type(2) {
+                color: #56ACDD;
+                border-bottom: 1px dashed #56ACDD;
+                cursor: pointer;
+              }
+            }
+            .product-name {
+              font-size: 0.8rem;
+              min-height: 4.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

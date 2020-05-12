@@ -1,0 +1,24 @@
+import 'bootstrap';
+import './style.scss';
+import 'material-design-icons';
+
+// images
+import './images/logo-min.png'
+import './images/logo-shop-min.png'
+import './images/banner-min.png'
+import './images/faucet-min.png'
+import './images/bath-min.png'
+import './images/sink-min.png'
+import './images/towel-dryer-min.png'
+import './images/rozmari-min.png'
+import './images/suon-min.png'
+import './images/claida-min.png'
+import './images/contemporari-min.png'
+import './images/shower-min.jpg'
+import './images/bathtub-min.jpg'
+import './images/toilet-bowl-min.jpg'
+import './images/toilet-bowl-2-min.jpg'
+import './images/cz.png'
+import './images/ch.png'
+import './images/tr.png'
+import './images/ru.png'

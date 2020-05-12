@@ -1,0 +1,17 @@
+.categories {
+  &-title {
+    color: #142F4F;
+  }
+  .card {
+    &-body {
+      background: #142F4F;
+      height: 2.7rem;
+    }
+    &-text {
+      a {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+    }
+  }
+}

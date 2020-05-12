@@ -1,0 +1,45 @@
+mixin cardProducts(src, alt, comment, title, flag, country, price)
+  .col-lg-3.col-md-5.col-sm-6.products-item
+      span.delivery.badge.badge-success Бесплатная доставка
+      span.lider.badge.badge-danger Лидер продаж
+      span.storage.badge.badge-success На складе
+      span.exclusive.badge.badge-primary Экслюзив
+      .card.w-100
+        img.card-img-top(src=src alt=alt)
+        .card-body
+          ul.list-group.list-group-flush.mt-0
+            li.list-group-item
+              .product-reiting.d-inline-flex.justify-content-start.align-items-center
+                p.text-nowrap.my-1
+                  span.material-icons grade
+                  span.material-icons grade
+                  span.material-icons grade
+                  span.material-icons grade
+                  span.material-icons grade
+                p.ml-3.mb-2 Отзывов:&nbsp;
+                  span= comment
+              .product-name.font-weight-bold.mb-4= title
+              .product-country.font-weight-bold.d-flex.align-items-center
+                img.pt-0(src=flag)
+                span &nbsp;&nbsp;
+                span= country
+            li.list-group-item
+              .product-price
+                h5= price
+              .product-btn.d-flex.justify-content-between.align-items-center
+                p
+                  button.btn.btn-outline-primary.text-nowrap Подробнее
+                p
+                  span.material-icons.pr-1 favorite_border
+                  span.material-icons shopping_cart
+
+
+.container.products
+  .row.mt-4
+    .col.text-center
+      h4.products-title.font-weight-bold Спец предложения
+  .row.mt-2
+    +cardProducts("images/shower-min.jpg", "shower", "0",  "Душевая система Lemark Tropic LM7002C", "images/cz.png", "Чехия", "15 830 руб.")
+    +cardProducts("images/toilet-bowl-min.jpg", "toilet-bowl", "1",  "Комплект унитаза Geberit Renova Nr.1 203050000 с инсталяцией Geberit Duofix Delta 458.126.00.1", "images/ch.png", "Швейцврия", "20 820 руб.")
+    +cardProducts("images/toilet-bowl-2-min.jpg", "toilet-bowl", "0",  "Комплект унитаза Vitra S 50 5956B003-0101 с инсталяцией Grohe Rapid SL 38772001", "images/tr.png", "Турция", "18 716 руб.")
+    +cardProducts("images/bathtub-min.jpg", "bathtub", "0",  "Акриловая ванна Aquanet Bright 180x70", "images/ru.png", "Россия", "11 199 руб.")
