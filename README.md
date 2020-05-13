@@ -1,4 +1,7 @@
 # ananevandrei11-santehnika_test
+Готовая страница на gitpages
+https://ananevandrei11.github.io/santehnika_test/index.html
+
 Запуск проекта
 <<<<<<< HEAD
 1) npm install 
