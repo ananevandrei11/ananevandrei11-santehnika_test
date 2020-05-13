@@ -1,0 +1,42 @@
+mixin telItem(href, tel, text)
+    p.mb-0
+        a(href=href)= tel
+    p.mb-lg-5= text
+
+.container-fluid.footer
+    .row.d-flex.flex-wrap
+        .col
+            .container.footer-nav
+                .row.d-flex.justify-content-lg-between.justify-content-center
+                    .col-sm-4.col-lg-3.mt-5
+                        p.font-weight-bold Популярные группы
+                        nav.nav.flex-column
+                            a.nav-link.pl-0(href='#') Раковины
+                            a.nav-link.pl-0(href='#') Смесители
+                            a.nav-link.pl-0(href='#') Полотенцесушители
+                            a.nav-link.pl-0(href='#') Ванны
+                        
+                    .col-sm-4.col-lg-3.mt-5
+                        p Контакты
+                        p Интернет-магазин Сантехника-Тут является официальным дистрибьютером продуции немецкой комании Грое в России.
+                    .col-sm-4.col-lg-3.mt-5
+                        p.font-weight-bold Информация
+                        +telItem("tel:", "8 800 555-66-13", "Бесплатные звонки по России")
+                        +telItem("tel:", "8 495 565-35-25", "Многоканальный номер")
+                        +telItem("tel:", "8 812 748-28-77", "Офис продаж в Санкт-Петербурге")
+                        +telItem("tel:", "8 861 205-25-67", "Офис продаж в Краснодаре")
+                        +telItem("tel:", "8 863 322-00-18 ", "Офис продаж в Ростове-на-Дону")
+
+                    .col-sm-4.col-lg-3.mt-5
+                        p.font-weight-bold Продавец
+                        p Сантехника-Тут
+                            br
+                            | ООО «Элит Групп»
+                            br
+                            | ОГРН 1115029005123
+                            br
+                            | ИНН 5029152090
+                
+                .row.mt-2
+                    .col
+                        p.text-center Сайт носит исключительно информационный характер, и ни при каких условиях не является публичной офертой, определяемой положениями статьи 437(2)

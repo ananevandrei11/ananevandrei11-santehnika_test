@@ -1,0 +1,15 @@
+.footer {
+    min-height: 37.7rem;
+    background-color: #142F4F;
+    &-nav {
+        font-size: 0.95rem;;
+        color:#D0D5DC;
+        .nav-link {
+            color:#D0D5DC;
+            text-decoration: underline;
+        }
+        a {
+            color:#D0D5DC;
+        }
+    }
+}

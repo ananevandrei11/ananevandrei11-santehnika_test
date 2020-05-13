@@ -4,8 +4,15 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
     title Document
+    link(href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css", rel="stylesheet")
+    link(href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet")
+    
   body
     include components/header/header.pug
     include components/categories/categories.pug
     include components/products/products.pug
     include components/articles/articles.pug
+    include components/footer/footer.pug
+
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+    script(src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js")

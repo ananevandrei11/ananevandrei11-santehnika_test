@@ -10,12 +10,12 @@ mixin cardProducts(src, alt, comment, title, flag, country, price)
           ul.list-group.list-group-flush.mt-0
             li.list-group-item
               .product-reiting.d-inline-flex.justify-content-start.align-items-center
-                p.text-nowrap.my-1
-                  span.material-icons grade
-                  span.material-icons grade
-                  span.material-icons grade
-                  span.material-icons grade
-                  span.material-icons grade
+                p.text-nowrap.mb-2
+                  span.fas.fa-star
+                  span.fas.fa-star 
+                  span.fas.fa-star 
+                  span.fas.fa-star 
+                  span.fas.fa-star
                 p.ml-3.mb-2 Отзывов:&nbsp;
                   span= comment
               .product-name.font-weight-bold.mb-4= title
@@ -30,8 +30,8 @@ mixin cardProducts(src, alt, comment, title, flag, country, price)
                 p
                   button.btn.btn-outline-primary.text-nowrap Подробнее
                 p
-                  span.material-icons.pr-1 favorite_border
-                  span.material-icons shopping_cart
+                  span.far.fa-heart.pr-1
+                  span.fas.fa-balance-scale
 
 
 .container.products

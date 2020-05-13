@@ -1,6 +1,8 @@
 import 'bootstrap';
 import './style.scss';
-import 'material-design-icons';
+import '@fortawesome/fontawesome-free';
+import 'jquery';
+
 
 // images
 import './images/logo-min.png'
@@ -23,3 +25,27 @@ import './images/ch.png'
 import './images/tr.png'
 import './images/ru.png'
 import './images/sink-articles-min.png'
+
+$(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        dots:false,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:5,
+                nav:false,
+                loop:false
+            }
+        }
+    })
+});
