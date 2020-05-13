@@ -1,5 +1,5 @@
 mixin cardCategories(src, alt, text)
-    .col-lg-3.col-md-5.col-sm-6
+    .col-12
       .card.mt-3
         img.card-img-top(src=src alt=alt)
         .card-body.d-flex.align-items-center.justify-content-center
@@ -10,7 +10,7 @@ mixin cardCategories(src, alt, text)
   .row.mt-4
     .col.text-center
       h4.categories-title.font-weight-bold Популярные товарные разделы
-  .row.mt-2
+  .row.mt-2.owl-carousel.owl-theme
     +cardCategories("images/faucet-min.png", "faucet", "Смесители")
     +cardCategories("images/bath-min.png", "bath", "Ванны")
     +cardCategories("images/sink-min.png", "sink", "Раковины")
@@ -19,7 +19,7 @@ mixin cardCategories(src, alt, text)
   .row.mt-4
     .col.text-center
       h4.categories-title.font-weight-bold Популярные коллекции
-  .row.mt-2
+  .row.mt-2.owl-carousel.owl-theme
     +cardCategories("images/rozmari-min.png", "rozmari", "Розмари")
     +cardCategories("images/claida-min.png", "claida", "Клайда")
     +cardCategories("images/suon-min.png", "suon", "Суон")

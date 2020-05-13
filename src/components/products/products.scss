@@ -1,63 +1,7 @@
 .products {
-  &-item {
+  .owl-carousel {
+    margin-left: 0rem;
     position: relative;
-    .delivery, .lider, .storage, .exclusive {
-      display: none;
-      position: absolute;
-      z-index: 1;
-    }
-    .storage {
-      background-color: #2A6218;
-    }
-    .exclusive {
-      background-color: #623C8B;
-    }
-    &:nth-of-type(1), &:nth-of-type(4) {
-      .delivery {
-        display: block;
-        top: 1rem;
-        left: 2rem;
-      }
-      .lider {
-        display: block;
-        top: 2.5rem;
-        left: 2rem;
-      }
-    }
-    &:nth-of-type(3) {
-      .delivery {
-        display: block;
-        top: 1rem;
-        left: 6.5rem;
-      }
-      .lider {
-        display: block;
-        top: 2.5rem;
-        left: 2rem;
-      }
-      .storage {
-        display: block;
-        top: 1rem;
-        left: 2rem;
-      }
-    }
-    &:nth-of-type(2) {
-      .lider {
-        display: block;
-        top: 1rem;
-        left: 6.5rem;
-      }
-      .storage {
-        display: block;
-        top: 1rem;
-        left: 2rem;
-      }
-      .exclusive {
-        display: block;
-        top: 2.5rem;
-        left: 2rem;
-      }
-    }
   }
   .card {
     min-width: 15rem;
@@ -90,9 +34,74 @@
               font-size: 0.8rem;
               min-height: 4.75rem;
             }
+            .product-country {
+              img {
+                width: 1rem;
+                height: 0.75rem;
+              }
+            }
           }
         }
       }
     }
   }
+// Pseudo-class - BADGES
+    .delivery, .lider, .storage, .exclusive {
+      display: none;
+      position: absolute !important;
+      z-index: 1;
+    }
+    .storage {
+      background-color: #2A6218;
+    }
+    .exclusive {
+      background-color: #623C8B;
+    }
+   #shower, #bathtub {
+      .delivery {
+        display: block;
+        top: 1rem;
+        left: 2rem;
+      }
+      .lider {
+        display: block;
+        top: 2.5rem;
+        left: 2rem;
+      }
+    }
+    #toilet-bowl-2 {
+      .delivery {
+        display: block;
+        top: 1rem;
+        left: 6.5rem;
+      }
+      .lider {
+        display: block;
+        top: 2.5rem;
+        left: 2rem;
+      }
+      .storage {
+        display: block;
+        top: 1rem;
+        left: 2rem;
+      }
+    }
+    #toilet-bowl-1 {
+      position: relative;
+      .lider {
+        display: block;
+        top: 1rem;
+        left: 6.5rem;
+      }
+      .storage {
+        display: block;
+        top: 1rem;
+        left: 2rem;
+      }
+      .exclusive {
+        display: block;
+        top: 2.5rem;
+        left: 2rem;
+      }
+    }
 }

@@ -2,7 +2,11 @@
   &-title {
     color: #142F4F;
   }
+  .owl-carousel {
+    margin-left: 0px;
+  }
   .card {
+    //min-width: 16rem;
     &-body {
       background: #142F4F;
       height: 2.7rem;

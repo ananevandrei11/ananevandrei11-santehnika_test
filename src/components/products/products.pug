@@ -1,5 +1,5 @@
-mixin cardProducts(src, alt, comment, title, flag, country, price)
-  .col-lg-3.col-md-5.col-sm-6.products-item
+mixin cardProducts(id, src, alt, comment, title, flag, country, price)
+  .col-12.products-item(id=id)
       span.delivery.badge.badge-success Бесплатная доставка
       span.lider.badge.badge-danger Лидер продаж
       span.storage.badge.badge-success На складе
@@ -38,8 +38,8 @@ mixin cardProducts(src, alt, comment, title, flag, country, price)
   .row.mt-4
     .col.text-center
       h4.products-title.font-weight-bold Спец предложения
-  .row.mt-2
-    +cardProducts("images/shower-min.jpg", "shower", "0",  "Душевая система Lemark Tropic LM7002C", "images/cz.png", "Чехия", "15 830 руб.")
-    +cardProducts("images/toilet-bowl-min.jpg", "toilet-bowl", "1",  "Комплект унитаза Geberit Renova Nr.1 203050000 с инсталяцией Geberit Duofix Delta 458.126.00.1", "images/ch.png", "Швейцврия", "20 820 руб.")
-    +cardProducts("images/toilet-bowl-2-min.jpg", "toilet-bowl", "0",  "Комплект унитаза Vitra S 50 5956B003-0101 с инсталяцией Grohe Rapid SL 38772001", "images/tr.png", "Турция", "18 716 руб.")
-    +cardProducts("images/bathtub-min.jpg", "bathtub", "0",  "Акриловая ванна Aquanet Bright 180x70", "images/ru.png", "Россия", "11 199 руб.")
+  .row.mt-2.owl-carousel.owl-theme
+    +cardProducts("shower", "images/shower-min.jpg", "shower", "0",  "Душевая система Lemark Tropic LM7002C", "images/cz.png", "Чехия", "15 830 руб.")
+    +cardProducts("toilet-bowl-1", "images/toilet-bowl-min.jpg", "toilet-bowl", "1",  "Комплект унитаза Geberit Renova Nr.1 203050000 с инсталяцией Geberit Duofix Delta 458.126.00.1", "images/ch.png", "Швейцврия", "20 820 руб.")
+    +cardProducts("toilet-bowl-2", "images/toilet-bowl-2-min.jpg", "toilet-bowl", "0",  "Комплект унитаза Vitra S 50 5956B003-0101 с инсталяцией Grohe Rapid SL 38772001", "images/tr.png", "Турция", "18 716 руб.")
+    +cardProducts("bathtub","images/bathtub-min.jpg", "bathtub", "0",  "Акриловая ванна Aquanet Bright 180x70", "images/ru.png", "Россия", "11 199 руб.")

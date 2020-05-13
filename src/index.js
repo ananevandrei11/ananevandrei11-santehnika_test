@@ -28,24 +28,25 @@ import './images/sink-articles-min.png'
 
 $(document).ready(function() {
     $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
+        loop:false,
         responsiveClass:true,
+        margin:0,
         dots:false,
+        nav:false,
         responsive:{
             0:{
                 items:1,
-                nav:false
             },
-            600:{
-                items:3,
-                nav:false
+            
+            540:{
+                items:2,
             },
             1000:{
-                items:5,
-                nav:false,
-                loop:false
-            }
+                items:3,
+            },
+            1280:{
+                items:4,
+            },
         }
     })
 });
